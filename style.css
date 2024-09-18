@@ -1,0 +1,113 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap:10px ;
+    border: 2px solid black;
+    font-size:xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgb(243, 247, 247) ;
+    grid-template-areas:
+    "head head head "
+    " main aside aside "
+    "main   section  section "
+    "main section  section "
+    "footer footer footer" ;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.header{
+    grid-area: head;
+    background-color: rgb(135, 141, 224);
+    
+}
+.main{
+    grid-area: main;
+    background-color: rgb(135, 141,224);
+}
+.aside{
+    grid-area: aside;
+    background-color: rgb(135, 141, 224);
+}
+.section{
+    grid-area: section;
+    background-color: rgb(134, 141, 224);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(135, 141, 224);
+}
+
+
+/* without  using areas */
+
+
+.container2{
+    display: grid;
+    height: 50vh;
+    background-color: rgb(248, 244, 244);
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+   
+
+}
+.grid-item1{
+    background-color: yellow;
+    grid-row:span 2;
+grid-column:span 2 ;  
+    text-align: center;
+    align-content: center;
+
+}
+.grid-item2{
+    background-color: rgb(47, 216, 228);
+    grid-row-end: ;
+    grid-column-end: ;
+
+}
+.grid-item3{
+    background-color: rgb(212, 68, 68);
+
+}
+.grid-item4{
+    background-color: rgb(39, 109, 238);
+    grid-column: span 3;
+
+}
+.grid-item5{
+    background-color: rgb(1, 148, 57);
+
+}
+.grid-item6{
+    background-color: rgb(202, 75, 24);
+    grid-row  :span 2;
+    grid-column:span 2;
+
+}
+.grid-item7{
+    background-color: rgb(139, 197, 183);
+
+}
+ 
+.grid-item8{
+    background-color: rgb(17, 6, 1);
+    grid-column: span 3;
+
+}
+ 
+.grid-item9{
+    background-color: rgb(138, 17, 122);
+
+}
+ 
+ 
+ 
+ 
